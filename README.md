@@ -15,12 +15,13 @@ sudo mn --topo linear,6 --link tc,bw=25 --mac
 ###  2️⃣ Inspeção das Interfaces e Endereços
 
 Dentro da CLI do Mininet (mininet>), foram utilizados os seguintes comandos:
-
-net          # Exibe conexões entre hosts e switches
-dump         # Mostra IP, MAC e interfaces de cada nó
+```bash
+net             # Exibe conexões entre hosts e switches
+nodes           # Exibe os nós disponíveis
+dump            # Mostra IP, MAC e interfaces de cada nó
 h1 ifconfig  -a # Detalha as interfaces do host h1
 s1 ifconfig  -a # Detalha as interfaces de s1
-
+```
 
 Esses comandos permitiram visualizar informações das interfaces, IPs e portas.
 
