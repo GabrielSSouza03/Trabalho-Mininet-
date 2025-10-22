@@ -28,8 +28,9 @@ Esses comandos permitiram visualizar informações das interfaces, IPs e portas.
 ### 3️⃣ Teste de Conectividade
 
 Para validar a comunicação entre os nós, foi utilizado:
-
+```bash
 pingall
+```
 
 O resultado esperado é 0% de perda de pacotes, indicando conectividade total entre os hosts.
 
@@ -38,13 +39,13 @@ O resultado esperado é 0% de perda de pacotes, indicando conectividade total en
 Foi configurado o h1 como servidor TCP (porta 5555) e o h2 como cliente, com teste de 15 segundos e relatório por segundo:
 
 Servidor:
-
+```bash
 iperf3 -c 10.0.0.1 -p 5555 -i 1 -t 15
-
+```
 
 Cliente:
-
+```bash
 iperf -s -p 5555
-
+``
 
 O teste apresentou medições de banda a cada segundo e um relatório final com a taxa média de transferência (~25 Mbps, conforme definido).
