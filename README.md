@@ -46,6 +46,6 @@ iperf3 -c 10.0.0.1 -p 5555 -i 1 -t 15
 Cliente:
 ```bash
 iperf -s -p 5555
-``
+```
 
 O teste apresentou medições de banda a cada segundo e um relatório final com a taxa média de transferência (~25 Mbps, conforme definido).
