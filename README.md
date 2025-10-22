@@ -12,7 +12,7 @@ A topologia foi criada via linha de comando do Mininet com:
 ```bash
 sudo mn --topo linear,6 --link tc,bw=25 --mac
 ``` 
-## 2️⃣ Inspeção das Interfaces e Endereços
+###  2️⃣ Inspeção das Interfaces e Endereços
 
 Dentro da CLI do Mininet (mininet>), foram utilizados os seguintes comandos:
 
@@ -24,7 +24,7 @@ s1 ifconfig  -a # Detalha as interfaces de s1
 
 Esses comandos permitiram visualizar informações das interfaces, IPs e portas.
 
-###3️⃣ Teste de Conectividade
+### 3️⃣ Teste de Conectividade
 
 Para validar a comunicação entre os nós, foi utilizado:
 
@@ -32,7 +32,7 @@ pingall
 
 O resultado esperado é 0% de perda de pacotes, indicando conectividade total entre os hosts.
 
-###4️⃣ Testes de Desempenho com Iperf
+### 4️⃣ Testes de Desempenho com Iperf
 
 Foi configurado o h1 como servidor TCP (porta 5555) e o h2 como cliente, com teste de 15 segundos e relatório por segundo:
 
